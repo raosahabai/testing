@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parveer | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Effects -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scan-line"></div>
+  <div class="noise"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div class="container">
+
+    <!-- ══ HERO ══ -->
+    <div class="hero">
+      <div class="hero-glow"></div>
+
+      <div class="profile-pic-wrap">
+        <img src="profile.jpg" alt="Parveer" class="profile-pic"
+          onerror="this.style.display='none'; document.querySelector('.avatar-fallback').style.display='flex';">
+        <div class="avatar-fallback">P</div>
+      </div>
+
+      <div class="hero-text">
+        <h1 data-text="PARVEER">PARVEER</h1>
+        <div class="hero-subtitle">B.TECH CYBERSECURITY STUDENT</div>
+        <p class="hero-college">Gautam Buddha University, Greater Noida</p>
+        <div class="hero-badges">
+          <span class="badge badge-green">
+            <span class="badge-dot"></span> OPEN TO OPPORTUNITIES
+          </span>
+          <span class="badge badge-blue">
+            <span class="badge-dot"></span> CURRENTLY LEARNING
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ABOUT ══ -->
+    <section>
+      <h2>About Me</h2>
+      <p class="about-text">
+        Motivated B.Tech Cybersecurity student with a strong interest in ethical hacking,
+        penetration testing, and building practical security tools. I enjoy working on
+        real-world problems — from IoT-based environmental monitoring systems to full-scale
+        web security platforms. Currently sharpening my skills in bug bounty hunting,
+        network security, and AI/ML applications.
+      </p>
+    </section>
+
+    <!-- ══ EDUCATION ══ -->
+    <section>
+      <h2>Education</h2>
+      <div class="edu-timeline">
+        <div class="edu-item">
+          <div class="edu-year">2024 – 25</div>
+          <div class="edu-degree">12th — Senior Secondary</div>
+          <div class="edu-school">RNS Public School</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">Pursuing</div>
+          <div class="edu-degree">B.Tech — Cybersecurity</div>
+          <div class="edu-school">Gautam Buddha University, Greater Noida</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SKILLS ══ -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Cybersecurity Fundamentals</span>
+        <span class="skill-tag">Ethical Hacking</span>
+        <span class="skill-tag">Phishing Awareness</span>
+        <span class="skill-tag">Web Development</span>
+        <span class="skill-tag">HTML / CSS / JS</span>
+        <span class="skill-tag">Java (Basics)</span>
+        <span class="skill-tag">Computer Networks</span>
+        <span class="skill-tag">Linux (Basics)</span>
+        <span class="skill-tag">IoT Systems</span>
+        <span class="skill-tag">Arduino / NodeMCU</span>
+        <span class="skill-tag">AI / ML (Learning)</span>
+        <span class="skill-tag">Bug Bounty (Learning)</span>
+      </div>
+
+      <div class="skill-bar-group">
+        <div class="skill-bar-item" style="--pct: 75%">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Cybersecurity</span>
+            <span class="skill-bar-pct">75%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-bar-item" style="--pct: 70%">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Web Development</span>
+            <span class="skill-bar-pct">70%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-bar-item" style="--pct: 60%">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Java Programming</span>
+            <span class="skill-bar-pct">60%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-bar-item" style="--pct: 65%">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">IoT / Hardware</span>
+            <span class="skill-bar-pct">65%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+        <div class="skill-bar-item" style="--pct: 50%">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">AI / Machine Learning</span>
+            <span class="skill-bar-pct">50%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROJECTS ══ -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>⚡ CyberVault — Cybersecurity & AI Tools Platform</h3>
+        <p>
+          A full multi-page web platform featuring a password strength analyzer, phishing URL
+          detector, AI tools finder (500+ tools across 28 categories), text encoder, free
+          courses directory (106 entries), and a live cybersecurity news page. Built with a
+          dark glassmorphism/matrix aesthetic and custom keyboard navigation shortcuts.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-chip">HTML</span>
+          <span class="tech-chip">CSS</span>
+          <span class="tech-chip">JavaScript</span>
+          <span class="tech-chip">Glassmorphism UI</span>
+          <span class="tech-chip">Canvas API</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>🎓 Advanced Student Management System</h3>
+        <p>
+          A fully functional student management system with student registration, record
+          management, grade tracking, and comprehensive data management features. Built using
+          Object-Oriented Programming principles with a clean and intuitive interface for
+          managing academic records efficiently.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-chip">Java</span>
+          <span class="tech-chip">OOP Concepts</span>
+          <span class="tech-chip">File Handling</span>
+          <span class="tech-chip">Data Management</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>🌿 IoT Stubble Burning Detection System</h3>
+        <p>
+          An IoT-based air quality monitoring system designed to detect stubble burning events
+          in agricultural fields. Continuously reads air quality and temperature/humidity data,
+          displays real-time values on an OLED screen, and triggers a buzzer alert when harmful
+          gas levels exceed safe thresholds — enabling early warning for environmental action.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-chip">NodeMCU (ESP8266)</span>
+          <span class="tech-chip">MQ135 Sensor</span>
+          <span class="tech-chip">DHT11 Sensor</span>
+          <span class="tech-chip">OLED Display</span>
+          <span class="tech-chip">Buzzer</span>
+          <span class="tech-chip">Arduino IDE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CERTIFICATIONS ══ -->
+    <section>
+      <h2>Certifications</h2>
+
+      <div class="cert-card">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <strong>Coincent.ai — AI/ML Training Program</strong>
+          <span class="cert-meta">COMPLETION CERTIFICATE · 2025</span>
+          <a href="phishing-certicate1.pdf" target="_blank" class="cert-link">
+            📄 VIEW CERTIFICATE
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">🛡️</div>
+        <div class="cert-info">
+          <strong>Phishing Awareness Program</strong>
+          <span class="cert-meta">PARTICIPATION CERTIFICATE</span>
+          <a href="phishing-certificate.pdf" target="_blank" class="cert-link">
+            📄 VIEW CERTIFICATE
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ACHIEVEMENTS ══ -->
+    <section>
+      <h2>Achievements &amp; Activities</h2>
+      <ul class="achievement-list">
+        <li>Completed Coincent.ai AI/ML Training Program with Certification</li>
+        <li>Built IoT-based Stubble Burning Detection System using NodeMCU</li>
+        <li>Developed CyberVault — full cybersecurity &amp; AI tools web platform</li>
+        <li>Built Advanced Student Management System using Java OOP</li>
+        <li>Completed academic projects in Cybersecurity</li>
+        <li>Participated in technical &amp; co-curricular activities at GBU</li>
+        <li>Phishing Awareness Program — Participation Certificate</li>
+      </ul>
+    </section>
+
+    <!-- ══ CONTACT ══ -->
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:ydvparveer@gmail.com" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <label>Email</label>
+            <span>ydvparveer@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:9138420111" class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-info">
+            <label>Phone</label>
+            <span>+91 9138420111</span>
+          </div>
+        </a>
+        <a href="https://github.com/parveer" target="_blank" class="contact-item">
+          <div class="contact-icon">💻</div>
+          <div class="contact-info">
+            <label>GitHub</label>
+            <span>github.com/parveer</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="footer">
+      © 2025 &nbsp;·&nbsp; PARVEER &nbsp;·&nbsp; CYBERSECURITY STUDENT &nbsp;·&nbsp; GBU GREATER NOIDA
+    </div>
+
+  </div><!-- /container -->
+
+  <script>
+    // ── CUSTOM CURSOR
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top  = my + 'px';
+    });
+
+    (function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animateRing);
+    })();
+
+    document.querySelectorAll('a, button, .skill-tag, .project-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width  = '16px';
+        cursor.style.height = '16px';
+        cursor.style.background = 'var(--accent2)';
+        ring.style.width  = '44px';
+        ring.style.height = '44px';
+        ring.style.borderColor = 'rgba(0,207,255,0.6)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width  = '10px';
+        cursor.style.height = '10px';
+        cursor.style.background = 'var(--accent)';
+        ring.style.width  = '30px';
+        ring.style.height = '30px';
+        ring.style.borderColor = 'rgba(0,255,180,0.5)';
+      });
+    });
+
+    // ── MATRIX RAIN
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H, cols, drops;
+
+    function initMatrix() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      cols = Math.floor(W / 20);
+      drops = Array(cols).fill(1);
+    }
+
+    function drawMatrix() {
+      ctx.fillStyle = 'rgba(2,8,16,0.05)';
+      ctx.fillRect(0, 0, W, H);
+      ctx.fillStyle = '#00ffb4';
+      ctx.font = '14px Share Tech Mono, monospace';
+      drops.forEach((y, i) => {
+        const ch = String.fromCharCode(0x30A0 + Math.random() * 96);
+        ctx.fillText(ch, i * 20, y * 20);
+        if (y * 20 > H && Math.random() > 0.975) drops[i] = 0;
+        drops[i]++;
+      });
+    }
+
+    initMatrix();
+    window.addEventListener('resize', initMatrix);
+    setInterval(drawMatrix, 45);
+
+    // ── SCROLL REVEAL for sections
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          // Animate skill bars when skills section visible
+          e.target.querySelectorAll('.skill-bar-item').forEach((bar, i) => {
+            setTimeout(() => bar.classList.add('animate'), i * 120);
+          });
+        }
+      });
+    }, { threshold: 0.12 });
+
+    sections.forEach(s => observer.observe(s));
+
+    // ── TYPING EFFECT for subtitle
+    const subtitle = document.querySelector('.hero-subtitle');
+    const fullText = subtitle.textContent.trim();
+    subtitle.textContent = '';
+    let charIndex = 0;
+    const typeTimer = setInterval(() => {
+      subtitle.textContent += fullText[charIndex++];
+      if (charIndex >= fullText.length) clearInterval(typeTimer);
+    }, 50);
+  </script>
+</body>
+</html>
